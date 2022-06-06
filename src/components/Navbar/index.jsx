@@ -95,7 +95,7 @@ const SocialMediaContainer = styled.div`
   `}
 `
 
-const SocialMediaItem = styled.div`
+const SocialMediaItem = styled.a`
   ${tw`
     text-2xl
     text-white
@@ -167,8 +167,8 @@ function Navbar() {
         <LineSeparator />
         <SocialMediaContainer>
           <SocialMediaItem><MdMailOutline /></SocialMediaItem>
-          <SocialMediaItem><FaLinkedin /></SocialMediaItem>
-          <SocialMediaItem><FaGithub /></SocialMediaItem>
+          <SocialMediaItem href="https://linkedin.com/in/chris-hct" target="_blank"><FaLinkedin /></SocialMediaItem>
+          <SocialMediaItem href="https://github.com/Echochr" target="_blank"><FaGithub /></SocialMediaItem>
         </SocialMediaContainer>
       </NavLinks>
     </Container>
