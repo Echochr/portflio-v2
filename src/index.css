@@ -8,6 +8,10 @@ html, body, #root {
   font-family: 'Raleway', sans-serif;
 }
 
+body {
+  background-color: #333;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
