@@ -12,7 +12,10 @@ const Container = styled.nav`
     flex
     justify-between
     items-center
-    h-12
+    h-36
+    p-6
+    lg:px-32
+    lg:py-12
   `}
 `;
 
