@@ -1,6 +1,6 @@
-import wave from '../assets/wave-haikei.svg';
-import wave2 from '../assets/wave-haikei-2.svg';
-import wave3 from '../assets/wave-haikei-3.svg';
+import wave from '../assets/wave/wave-haikei.svg';
+import wave2 from '../assets/wave/wave-haikei-2.svg';
+import wave3 from '../assets/wave/wave-haikei-3.svg';
 
 const SPACER = {
   wave,
