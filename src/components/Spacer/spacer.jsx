@@ -1,13 +1,22 @@
 import React from 'react';
+import styled from 'styled-components';
+import tw from 'twin.macro';
 
 import SPACER from '../../constants/spacer';
+
+const StyledImg = styled.img`
+  aspectRatio: 960/200;
+  ${tw`
+    w-screen
+  `}
+`;
 
 function Spacer() {
   return (
     <>
-      <img className="absolute w-screen aspect-[960/200] opacity-50" src={SPACER.wave} alt="" />
-      <img className="absolute w-screen aspect-[960/200] opacity-50" src={SPACER.wave3} alt=""/>
-      <img className="w-screen aspect-[960/200]" src={SPACER.wave2} alt="" />
+      <StyledImg className="absolute opacity-50" src={SPACER.wave} alt="" />
+      <StyledImg className="absolute opacity-50" src={SPACER.wave3} alt=""/>
+      <StyledImg src={SPACER.wave2} alt="" />
     </>
   );
 }
