@@ -113,12 +113,12 @@ const SocialMediaItem = styled.a`
 const SideMenu = styled.div`
   width: 65vw;
   height: 100vh;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(12px);
   ${tw`
     absolute
     top-0
     right-0
-    bg-white/10
+    bg-white/20
     z-10
 
     p-6
