@@ -149,7 +149,7 @@ function Navbar() {
               <LinkItem href="#" onClick={toggleSideMenu}>Home</LinkItem>
               <LinkItem href="#projects" onClick={toggleSideMenu}>Projects</LinkItem>
               <LinkItem href="#skills" onClick={toggleSideMenu}>Skills</LinkItem>
-              <LinkItem href="#" onClick={toggleSideMenu}>Contact</LinkItem>
+              <LinkItem href="#contact" onClick={toggleSideMenu}>Contact</LinkItem>
             </LinkItemsContainer>
           </SideMenu>
         )}
@@ -165,7 +165,7 @@ function Navbar() {
           <LinkItem href="#">Home</LinkItem>
           <LinkItem href="#projects">Projects</LinkItem>
           <LinkItem href="#skills">Skills</LinkItem>
-          <LinkItem href="#">Contact</LinkItem>
+          <LinkItem href="#contact">Contact</LinkItem>
         </LinkItemsContainer>
         <LineSeparator />
         <SocialMediaContainer>

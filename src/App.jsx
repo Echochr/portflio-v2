@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import Spacer from './components/Spacer';
 import ProjectsSection from './components/Projects';
 import SkillsExpSection from './components/Skills-Exp';
+import ContactForm from './components/ContactForm';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Spacer />
       <ProjectsSection />
       <SkillsExpSection />
+      <ContactForm />
     </>
   );
 }
