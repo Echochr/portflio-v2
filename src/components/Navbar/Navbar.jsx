@@ -146,7 +146,7 @@ function Navbar() {
               <MdClose className="text-white text-4xl" onClick={toggleSideMenu} />
             </div>
             <LinkItemsContainer>
-              <LinkItem href="#" onClick={toggleSideMenu}>Home</LinkItem>
+              <LinkItem href="#home" onClick={toggleSideMenu}>Home</LinkItem>
               <LinkItem href="#projects" onClick={toggleSideMenu}>Projects</LinkItem>
               <LinkItem href="#skills" onClick={toggleSideMenu}>Skills</LinkItem>
               <LinkItem href="#contact" onClick={toggleSideMenu}>Contact</LinkItem>
@@ -158,18 +158,18 @@ function Navbar() {
   }
 
   return (
-    <Container>
+    <Container id="home">
       <Logo>CH<div /></Logo>
       <NavLinks>
         <LinkItemsContainer>
-          <LinkItem href="#">Home</LinkItem>
+          <LinkItem href="#home">Home</LinkItem>
           <LinkItem href="#projects">Projects</LinkItem>
           <LinkItem href="#skills">Skills</LinkItem>
           <LinkItem href="#contact">Contact</LinkItem>
         </LinkItemsContainer>
         <LineSeparator />
         <SocialMediaContainer>
-          <SocialMediaItem><MdMailOutline /></SocialMediaItem>
+          <SocialMediaItem href="#contact"><MdMailOutline /></SocialMediaItem>
           <SocialMediaItem href="https://linkedin.com/in/chris-hct" target="_blank"><FaLinkedin /></SocialMediaItem>
           <SocialMediaItem href="https://github.com/Echochr" target="_blank"><FaGithub /></SocialMediaItem>
         </SocialMediaContainer>
