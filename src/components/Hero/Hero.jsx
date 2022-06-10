@@ -82,7 +82,7 @@ function Hero() {
         <BoldText>HELLO WORLD</BoldText>
         <Name>I'm <span>Chris</span> <div>👋</div></Name>
         <Title>Web Developer</Title>
-        <Button><a href="#contact">CONTACT ME</a></Button>
+        <a href="#contact"><Button>CONTACT ME</Button></a>
       </Greetings>
     </Container>
   );
