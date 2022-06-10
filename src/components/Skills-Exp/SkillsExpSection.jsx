@@ -52,7 +52,7 @@ const ExpContainer = styled.div`
 
 function SkillsExpSection() {
   return (
-    <Section>
+    <Section id="skills">
       <Container>
         <Heading>Skills & Experience</Heading>
         <InnerContainer>
