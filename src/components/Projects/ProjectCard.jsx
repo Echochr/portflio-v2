@@ -24,7 +24,7 @@ const Container = styled.div`
     flex
     items-center
     justify-between
-    mt-2
+    mt-4
   `}
 
   a {
@@ -32,6 +32,8 @@ const Container = styled.div`
       py-0.5
       px-4
       text-white
+      text-sm
+      lg:text-base
       bg-white/20
       rounded-md
       cursor-pointer
@@ -49,14 +51,16 @@ const Title = styled.h3`
     text-white
     uppercase
     font-extrabold
-    text-2xl
-    mt-2
+    text-xl
+    lg:text-2xl
   `}
 `;
 
 const Description = styled.p`
   ${tw`
     text-white
+    text-sm
+    lg:text-base
     mt-2
   `}
 `;
