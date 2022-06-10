@@ -147,8 +147,8 @@ function Navbar() {
             </div>
             <LinkItemsContainer>
               <LinkItem href="#" onClick={toggleSideMenu}>Home</LinkItem>
-              <LinkItem href="#" onClick={toggleSideMenu}>Works</LinkItem>
-              <LinkItem href="#" onClick={toggleSideMenu}>Skills</LinkItem>
+              <LinkItem href="#projects" onClick={toggleSideMenu}>Projects</LinkItem>
+              <LinkItem href="#skills" onClick={toggleSideMenu}>Skills</LinkItem>
               <LinkItem href="#" onClick={toggleSideMenu}>Contact</LinkItem>
             </LinkItemsContainer>
           </SideMenu>
@@ -163,8 +163,8 @@ function Navbar() {
       <NavLinks>
         <LinkItemsContainer>
           <LinkItem href="#">Home</LinkItem>
-          <LinkItem href="#">Works</LinkItem>
-          <LinkItem href="#">Skills</LinkItem>
+          <LinkItem href="#projects">Projects</LinkItem>
+          <LinkItem href="#skills">Skills</LinkItem>
           <LinkItem href="#">Contact</LinkItem>
         </LinkItemsContainer>
         <LineSeparator />
