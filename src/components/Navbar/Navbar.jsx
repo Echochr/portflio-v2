@@ -135,7 +135,7 @@ function Navbar() {
 
   if (isMobile) {
     return (
-      <Container>
+      <Container id="home">
         <Logo>CH<div /></Logo>
         <BurgerMenuIcon>
           {!sideMenu && <MdMenu onClick={toggleSideMenu} />}
