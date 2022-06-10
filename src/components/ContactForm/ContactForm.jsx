@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import tw from 'twin.macro';
+import tw, { css } from 'twin.macro';
 import emailjs from '@emailjs/browser';
+import BeatLoader from 'react-spinners/BeatLoader';
 
 const Section = styled.section`
   background-color: #2a2a2a;
@@ -87,6 +88,10 @@ const Message = styled.p`
   `}
 `;
 
+const Loader = css`
+  justify-self: center;
+`;
+
 const SubmitButton = styled.button`
   width: 100px;
   border: 1px solid white;
@@ -107,10 +112,12 @@ const SubmitButton = styled.button`
 
 function ContactForm() {
   const form = React.useRef();
+  const [loading, setLoading] = React.useState(false);
   const [message, setMessage] = React.useState(null);
 
   const sendEmail = React.useCallback(async (evt) => {
     evt.preventDefault();
+    setLoading(true);
     
     try {
       const res = await emailjs.sendForm(
@@ -125,6 +132,8 @@ function ContactForm() {
       console.log(err);
       setMessage('🤯 Something went wrong. Please try again.');
     }
+
+    setLoading(false);
   }, [form]);
 
   return (
@@ -144,6 +153,7 @@ function ContactForm() {
             <Label htmlFor="message">Message</Label>
             <Textarea id="message" name="message" placeholder="Message" rows="5" required />
           </Group>
+          {loading && <BeatLoader color="#facc15" css={Loader} size={10} />}
           {message && <Message>{message}</Message>}
           <SubmitButton type="submit">Submit</SubmitButton>
         </Form>
