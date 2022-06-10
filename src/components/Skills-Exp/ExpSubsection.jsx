@@ -26,6 +26,7 @@ const Year = styled.h5`
     font-bold
     text-white
     w-2/5
+    text-xl
   `}
 `;
 
@@ -34,11 +35,12 @@ const Title = styled.div`
   text-white
     font-bold
     w-3/5
+    text-xl
   `}
 
   p {
     ${tw`
-      text-xs
+      text-sm
       font-normal
     `}
   }
