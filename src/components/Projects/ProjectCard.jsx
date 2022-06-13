@@ -69,7 +69,7 @@ function ProjectCard({ title, description, img, appLink, sourceCode }) {
   return (
     <Card>
       <a href={appLink} target="_blank" rel="noreferrer">
-        <Image src={img} />
+        <Image src={img} alt={title}/>
       </a>
       <Container>
         <Title>{title}</Title>

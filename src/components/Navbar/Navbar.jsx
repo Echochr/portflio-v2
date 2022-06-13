@@ -170,8 +170,12 @@ function Navbar() {
         <LineSeparator />
         <SocialMediaContainer>
           <SocialMediaItem href="#contact"><MdMailOutline /></SocialMediaItem>
-          <SocialMediaItem href="https://linkedin.com/in/chris-hct" target="_blank"><FaLinkedin /></SocialMediaItem>
-          <SocialMediaItem href="https://github.com/Echochr" target="_blank"><FaGithub /></SocialMediaItem>
+          <SocialMediaItem href="https://linkedin.com/in/chris-hct" target="_blank" rel="noreferrer">
+            <FaLinkedin />
+          </SocialMediaItem>
+          <SocialMediaItem href="https://github.com/Echochr" target="_blank" rel="noreferrer">
+            <FaGithub />
+          </SocialMediaItem>
         </SocialMediaContainer>
       </NavLinks>
     </Container>
