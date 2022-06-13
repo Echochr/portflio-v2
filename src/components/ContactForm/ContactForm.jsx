@@ -117,6 +117,7 @@ function ContactForm() {
 
   const sendEmail = React.useCallback(async (evt) => {
     evt.preventDefault();
+    setMessage(null);
     setLoading(true);
     
     try {
