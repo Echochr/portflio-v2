@@ -54,6 +54,7 @@ function Projects() {
               img={project.img}
               appLink={project.appLink}
               sourceCode={project.sourceCode}
+              skills={project.skills}
               key={idx}
             />
           ))}

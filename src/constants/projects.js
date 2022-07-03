@@ -11,6 +11,7 @@ const PROJECTS = [
     appLink: 'https://booking-clone-client.netlify.app/',
     sourceCode: 'https://github.com/Echochr/booking-clone-client',
     img: booking_clone,
+    skills: ['Typescript', 'React', 'TailwindCSS', 'Node.js', 'Express', 'REST API', 'MongoDB'],
   },
   {
     title: 'Pokedex',

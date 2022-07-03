@@ -65,7 +65,29 @@ const Description = styled.p`
   `}
 `;
 
-function ProjectCard({ title, description, img, appLink, sourceCode }) {
+const SkillsContainer = styled.div`
+  ${tw`
+    grid
+    grid-cols-5
+    justify-between
+    gap-2.5
+    mt-4
+  `}
+`;
+
+const SkillItem = styled.span`
+  ${tw`
+    text-white
+    text-xs
+    bg-white/10
+    py-0.5
+    px-2.5
+    rounded-full
+    text-center
+  `}
+`;
+
+function ProjectCard({ title, description, img, appLink, sourceCode, skills }) {
   return (
     <Card>
       <a href={appLink} target="_blank" rel="noreferrer">
@@ -78,6 +100,9 @@ function ProjectCard({ title, description, img, appLink, sourceCode }) {
         </a>
       </Container>
       <Description>{description}</Description>
+      <SkillsContainer>
+        {skills?.map((skill) => <SkillItem>{skill}</SkillItem>)}
+      </SkillsContainer>
     </Card>
   );
 }
