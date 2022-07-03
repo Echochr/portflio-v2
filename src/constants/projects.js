@@ -9,7 +9,7 @@ const PROJECTS = [
     title: 'Booking clone',
     description: 'Hotel booking website clone',
     appLink: 'https://booking-clone-client.netlify.app/',
-    sourceCode: 'https://github.com/Echochr/booking-clone-client',
+    sourceCode: 'https://github.com/Echochr/booking-clone-server',
     img: booking_clone,
     skills: ['Typescript', 'React', 'TailwindCSS', 'Node.js', 'Express', 'REST API', 'MongoDB'],
   },
