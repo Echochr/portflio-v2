@@ -61,7 +61,8 @@ const Description = styled.p`
     text-white
     text-sm
     lg:text-base
-    mt-2
+    mt-2.5
+    min-h-[50px]
   `}
 `;
 
@@ -71,7 +72,7 @@ const SkillsContainer = styled.div`
     grid-cols-5
     justify-between
     gap-2.5
-    mt-4
+    mt-2.5
   `}
 `;
 
@@ -101,7 +102,7 @@ function ProjectCard({ title, description, img, appLink, sourceCode, skills }) {
       </Container>
       <Description>{description}</Description>
       <SkillsContainer>
-        {skills?.map((skill) => <SkillItem>{skill}</SkillItem>)}
+        {skills?.map((skill, idx) => <SkillItem key={idx}>{skill}</SkillItem>)}
       </SkillsContainer>
     </Card>
   );
