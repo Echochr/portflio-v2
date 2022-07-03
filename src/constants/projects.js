@@ -2,8 +2,16 @@ import pokedex from '../assets/projects/pokedex.png';
 import yelpcamp from '../assets/projects/yelpcamp.png';
 import todolist from '../assets/projects/todolist.png';
 import find_the_crown from '../assets/projects/find_the_crown.png';
+import booking_clone from '../assets/projects/booking_clone.png';
 
 const PROJECTS = [
+  {
+    title: 'Booking clone',
+    description: 'Hotel booking website clone',
+    appLink: 'https://booking-clone-client.netlify.app/',
+    sourceCode: 'https://github.com/Echochr/booking-clone-client',
+    img: booking_clone,
+  },
   {
     title: 'Pokedex',
     description: 'Pokedex showing all Pokemons from Gen 1-8',
@@ -25,14 +33,6 @@ const PROJECTS = [
     appLink: 'https://todolist-genhk.herokuapp.com/tasks',
     sourceCode: 'https://github.com/fewd02grp2/fewd02grp2.github.io',
     img: todolist,
-  },
-  {
-    title: 'Find The Crown',
-    description:
-      "A simple web game to find the crown. Original concept from Codecademy's Javascript capstone project",
-    appLink: 'https://echochr.github.io/find_the_crown/',
-    sourceCode: 'https://github.com/Echochr/find_the_crown',
-    img: find_the_crown,
   },
 ];
 
