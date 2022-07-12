@@ -22,7 +22,9 @@ const Image = styled.img`
 const Container = styled.div`
   ${tw`
     flex
-    items-center
+    flex-col
+    md:flex-row
+    // items-center
     justify-between
     mt-4
   `}
@@ -56,6 +58,17 @@ const Title = styled.h3`
   `}
 `;
 
+const SourceCodeLink = styled.a`
+  ${tw`
+    w-max
+    mt-1
+    md:mt-0
+    flex
+    justify-center
+    items-center
+  `}
+`;
+
 const Description = styled.p`
   ${tw`
     text-white
@@ -69,7 +82,8 @@ const Description = styled.p`
 const SkillsContainer = styled.div`
   ${tw`
     grid
-    grid-cols-5
+    grid-cols-3
+    xl:grid-cols-5
     justify-between
     gap-2.5
     mt-2.5
@@ -96,9 +110,9 @@ function ProjectCard({ title, description, img, appLink, sourceCode, skills }) {
       </a>
       <Container>
         <Title>{title}</Title>
-        <a href={sourceCode} target="_blank" rel="noreferrer">
+        <SourceCodeLink href={sourceCode} target="_blank" rel="noreferrer">
           Source Code
-        </a>
+        </SourceCodeLink>
       </Container>
       <Description>{description}</Description>
       <SkillsContainer>
