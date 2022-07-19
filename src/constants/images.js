@@ -17,6 +17,8 @@ import rtl from '../assets/react-testing-library.png';
 import eslint from '../assets/eslint.png';
 import postman from '../assets/postman.png';
 import slack from '../assets/slack.png';
+import typescript from '../assets/typescript.png';
+import redux from '../assets/redux.png';
 
 const IMAGES = {
   html5,
@@ -38,6 +40,8 @@ const IMAGES = {
   eslint,
   postman,
   slack,
+  typescript,
+  redux,
 };
 
 export default IMAGES;

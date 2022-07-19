@@ -1,12 +1,13 @@
 const SKILLS = [
   {
     frontend: [
-      { skill: 'html5', title: 'HTML5' },
-      { skill: 'css3', title: 'CSS3' },
-      { skill: 'javascript', title: 'Javascript' },
+      // { skill: 'html5', title: 'HTML5' },
+      // { skill: 'css3', title: 'CSS3' },
+      { skill: 'typescript', title: 'Typescript' },
       { skill: 'react', title: 'React' },
       { skill: 'materialui', title: 'Material UI' },
       { skill: 'tailwindcss', title: 'TailwindCSS' },
+      { skill: 'redux', title: 'Redux' },
     ],
   },
   {

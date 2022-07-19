@@ -27,7 +27,7 @@ const SkillLogo = styled.div`
   `}
 
   img {
-    max-width: 70px;
+    max-width: 60px;
     height: auto;
   }
 `;
